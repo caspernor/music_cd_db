@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+    <title>Music CDs</title>
+</head>
+<body>
+    <header>
+        <h1>Music CDs</h1>
+    </header>
+    <main>
+        <form id="formCD">
+            <div>
+                <label for="textAuthor">Author</label>
+                <input type="text" class="text_input" id="textAuthor" required>
+            </div>
+            <div>
+                <label for="textTitle">Title</label>
+                <input type="text" class="text_input" id="textTitle" required>
+            </div>
+            <div>
+                <label for="textYear">Year</label>
+                <input type="text" class="text_year" id="textYear" pattern="[0-9]{4}" required>
+            </div>
+            <div>
+                <input type="submit" value="Add">
+            </div>
+        </form>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Author</th>
+                        <th>Title</th>
+                        <th class="right">Year</th>
+                        <th class="right"></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Casper Nordeidet</p>
+    </footer>
+</body>
+</html>

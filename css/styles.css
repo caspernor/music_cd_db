@@ -1,0 +1,80 @@
+@import 'variables.css';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 0.5rem 2rem;
+}
+
+main {
+    padding: 1rem;
+    line-height: 1.5rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0.3rem 0.3rem;
+    text-align: center;
+}
+
+label {
+    width: 5rem;
+}
+
+input[type=text] {
+    display: block;
+    width: 100%;
+}
+input[class=text_year] {
+    float: right;
+    display: inline;
+    width: auto;
+    text-align: right;
+}
+input[type=submit] {
+    color: var(--primary-color);
+    margin-top: 0.5rem;
+    padding: 0.3rem 1rem;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+}
+
+table {
+    border: solid thin var(--primary-color);
+    width: 100%;
+    table-layout: auto;
+    visibility: hidden;
+}
+
+table thead {
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    text-align: left;
+}
+
+th, tr {
+    padding: 0 0.5rem;
+
+    th.right, tr.right {
+        text-align: right;
+    }
+}
+
+.visible {
+    visibility: visible;
+}
+
+img.delete {
+    content: url(../img/trashcan.png);
+    cursor: pointer;
+}
